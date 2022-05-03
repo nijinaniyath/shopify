@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "./src",
+        "experimentalDecorators": true,
+        "paths": {
+            "@controllers/*": [
+                "./controllers/*"
+            ],
+            "@models/*": [
+                "./models/*"
+            ],
+            "@common/*": [
+                "./common/*"
+            ],
+            "@middleware/*": [
+                "./middleware/*"
+            ],
+            "@db/*": [
+                "./db/*"
+            ],
+            "@router/*": [
+                "./router/*"
+            ],
+            "*": [
+                "node_modules/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "alias": {}
+}
